@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'DoppioOne';
+    src: url('../fonts/DoppioOne-Regular.ttf')
+  }
+  
+  body {
+    font-family: 'DoppioOne';
+    color: black;
+    margin: 0;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+  }
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 800px;
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.radio-option:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #97bb34;
+  border-radius: 20px;
+}
+
+.radio-option:hover input[type="radio"] {
+  border-color: #97bb34;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+
+.checkbox-option {
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.checkbox-option:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #97bb34;
+  border-radius: 20px;
+}
+
+.checkbox-option:not(:hover) {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+
+.checkbox-option:hover input[type="checkbox"] {
+  border-color: #007bff;
+}
+
+.checkbox-option input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+
+.large-dropdown {
+  font-size: 24px;
+  padding: 10px;
+  width: 300px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
